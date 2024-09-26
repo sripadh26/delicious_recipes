@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #eaeff1, #f8e1f4);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #07ffda; /* Dark purple */
+    color: rgb(4, 4, 4);
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 15px;
+    background: linear-gradient(to right, #000000, #000000); /* Gradient background */
+    border-radius: 100px; /* Rounded corners */
+    padding: 10px 0; /* Add padding for nav */
+}
+
+nav a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform for hover */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-grow: 1;
+}
+
+/* Section Headings */
+h2 {
+    color: #010101; /* Match header color */
+    font-weight: 600;
+}
+
+/* Paragraph Styles */
+p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6ec2c0; /* Match header */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+/* Job Card Styles (Original Design) */
+.job-card {
+    background-color: #ffffff; /* White background for job cards */
+    border: 1px solid #dddddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside card */
+    margin-bottom: 20px; /* Space between cards */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Vertical layout */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.job-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+}
+
+.job-card h2 {
+    font-size: 1.5rem; /* Title size */
+    margin: 0 0 10px; /* Space below title */
+    color: #5e35b1; /* Match header color */
+}
+
+.job-card p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Job Card Button Styles */
+.job-card a {
+    display: inline-block; /* Make it block-level */
+    background-color: #5e35b1; /* Purple background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Button padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.job-card a:hover {
+    background-color: #4a148c; /* Darker purple on hover */
+}
+
+/* Contact and About Page Styling */
+.contact-page, .about-page {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+}
+
+/* Form Styling */
+.job-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 450px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #7b1fa2; /* Highlight border on focus */
+}
+
+/* Button Styles */
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4a148c; /* Darker purple on hover */
+}
+
+/* Back Button */
+.back-button, .add-job-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #5e35b1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover, .add-job-button:hover {
+    background-color: #4a148c;
+}
+
+.delete-button {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 8px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 10px; /* Space between buttons */
+    width: min-content;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/styles1.css">
+  <title>Reviews | Hiredly</title>
+</head>
+<body>
+  <header>
+    <h1>User Reviews</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/Recipes">Recipes</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>What Our Users Say</h2>
+    <ul>
+      <% reviews.forEach(review => { %>
+        <li>
+          <strong><%= review.name %></strong>: <%= review.review %>
+        </li>
+      <% }) %>
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; 2024 Delicious Recipes | Your Go-To Food Recipe Website</p>
+  </footer>
+</body>
+</html>

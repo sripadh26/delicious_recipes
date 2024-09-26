@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Listings</title>
+    <link rel="stylesheet" href="/css/styles1.css">
+</head>
+<body>
+    <header>
+        <img src="/images/logo.png" alt="Recipe Haven Logo" style="height: 50px;">
+        <h1>Recipe Listings</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/recipes">Recipes</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Our Delicious Recipes</h2>
+        <a href="/recipes/add" class="btn">Add a New Recipe</a>
+        <ul>
+            <% recipes.forEach(recipe => { %>
+                <li>
+                    <div class="recipe-card">
+                        <img src="<%= recipe.image %>" alt="<%= recipe.title %>" style="width: 350px; height: auto; max-height: 350px; object-fit: cover; margin-right: 60px;" />
+                        <div>
+                            <h3><%= recipe.title %></h3>
+                            <p><strong>Ingredients:</strong> <%= recipe.ingredients %></p> <!-- Updated to display ingredients -->
+                            <p><strong>Description:</strong> <%= recipe.description %></p>
+                        </div>
+                    </div>
+                </li>
+            <% }) %>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Delicious Recipes | Your Go-To Food Recipe Website</p>
+    </footer>
+</body>
+</html>
